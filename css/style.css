@@ -1,14 +1,12 @@
 @import url(header.css);
 @import url(nullstule.css);
 @import url(head-tittle.css);
+@import url(block1.css);
 
 
 body{
     background-color: #E5E5E5;
     
 }
-.main{
-    max-width: 1400px;
-    margin: 0 auto;
-}
+
 /*# sourceMappingURL=style.css.map */

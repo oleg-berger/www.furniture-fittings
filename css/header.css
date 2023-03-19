@@ -26,6 +26,9 @@
   line-height: 150%;
   margin-top: 20px;
 }
+.header__text:active {
+  color: #525252;
+}
 
 .menu {
   display: flex;

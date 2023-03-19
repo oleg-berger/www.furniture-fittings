@@ -2,6 +2,8 @@
 .head-tittle {
     display: flex;
     justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
     border-bottom: solid 1px gray;
     padding-bottom: 30px;
 }
@@ -20,6 +22,9 @@
             line-height: 150%;
             color: #444444;
             margin-top: 20px;
+            &:active{
+                color: #868686;
+            }
 			&_black {
                 font-weight: 500;
 			}
@@ -38,6 +43,10 @@
     align-items: center;
     &__photo {
         margin-top: 20px;
+        &:active{
+            // box-shadow: #ff0000;
+            filter: drop-shadow(5px 10px 15px black);
+        }
     }
 }
 
