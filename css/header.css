@@ -3,6 +3,8 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: solid 1px gray;
 }
 
 .adress-contact {
