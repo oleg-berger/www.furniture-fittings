@@ -1,0 +1,61 @@
+.contact__el2, .contact__el1 {
+  border: solid 1px rgb(180, 180, 180);
+}
+
+.contact__el3 span, .contact__el2 span {
+  color: #7A7A7A;
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 30px;
+}
+
+.contact__numbers h3 {
+  color: #fff;
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  padding-right: 30px;
+}
+
+.contact {
+  display: grid;
+  grid-template: 300px 300px 300px/1fr 1fr;
+  background-color: #444444;
+}
+.contact__el1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+  grid-row: 1/4;
+}
+.contact__el1 h1 {
+  color: #fff;
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+}
+.contact__el2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__el3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__el4 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.contact__el4 h3 {
+  padding-right: 10px;
+}/*# sourceMappingURL=contact.css.map */

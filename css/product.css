@@ -40,8 +40,11 @@
 .products__el6 {
   border: solid 1px black;
 }
-.products a:active {
-  box-shadow: 0 5px 10px rgba(190, 190, 190, 0.464);
+.products .prodduct__el2_active-button {
+  background-color: #E5E5E5;
+}
+.products .prodduct__el2_active-button:active {
+  background-color: #d2d2d2;
 }
 
 .products__text {
@@ -66,6 +69,7 @@
 }
 
 .products__el6-button {
+  background-color: #E5E5E5;
   margin-top: 288px;
   border: solid 1px black;
   min-width: 506px;
@@ -76,7 +80,7 @@
   text-align: center;
 }
 .products__el6-button:active {
-  background-color: #e7e7e7;
+  background-color: #c1c1c1;
 }
 .products__el6-button::after {
   content: "→";

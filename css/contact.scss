@@ -1,0 +1,78 @@
+%allstyle{
+    border: solid 1px rgb(180, 180, 180);
+} 
+%contact-span-f-text{
+            color: #7A7A7A;
+            font-family: 'RF Dewi Expanded';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            padding-left: 30px;
+    }
+    %contact-h3-s-text{
+        color: #fff;
+        font-family: 'RF Dewi Expanded';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        padding-right: 30px;
+    }
+.contact {
+    display: grid;
+    grid-template: 300px 300px 300px / 1fr 1fr;
+    background-color: #444444;
+    &__el1 {
+        display: flex;
+        justify-content: center;
+        padding-top: 130px;
+        grid-row: 1 / 4;
+        @extend%allstyle;
+        h1{
+            color: #fff;
+            font-family: 'RF Dewi Expanded';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 110%;
+        }
+    }
+
+    
+    &__el2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @extend%allstyle;
+        span{
+            @extend%contact-span-f-text;
+        }
+    }
+
+    &__el3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        span{
+            @extend%contact-span-f-text;
+        }
+    }
+
+    &__el4{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        // padding-left: 150px;
+        h3{
+            padding-right: 10px;
+        }
+    }
+
+}
+.contact__numbers{
+    h3{
+        @extend%contact-h3-s-text
+    }
+}
