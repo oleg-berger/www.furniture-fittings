@@ -1,0 +1,75 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 506px);
+  grid-template-rows: 450px 360px;
+}
+.products__el1 {
+  border: solid 1px black;
+}
+.products .products__el3, .products .products__el2 {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products .products__el3 img, .products .products__el2 img {
+  max-width: 320px;
+}
+.products__el4 {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products__el4 img {
+  max-width: 192px;
+}
+.products__el5 {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products__el5 img {
+  max-width: 216px;
+}
+.products__el6 {
+  border: solid 1px black;
+}
+.products a:active {
+  box-shadow: 0 5px 10px rgba(190, 190, 190, 0.464);
+}
+
+.products__text {
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: #444444;
+  margin: 30px 0px 0px 0px;
+  padding-right: 250px;
+}
+
+.products__text_margin {
+  margin-top: 100px;
+}
+
+.products__text_size {
+  padding: 90px 0px 0px 50px;
+  font-size: 32px;
+  line-height: 110%;
+}
+
+.products__el6-button {
+  margin-top: 288px;
+  border: solid 1px black;
+  min-width: 506px;
+  min-height: 71px;
+}
+.products__el6-button:active {
+  background-color: #e7e7e7;
+}/*# sourceMappingURL=product.css.map */
