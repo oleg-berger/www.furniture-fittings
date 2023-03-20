@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.kitchen_el16, .kitchen_el15, .kitchen_el14, .kitchen_el13, .kitchen_el12, .kitchen_el11, .kitchen_el10, .kitchen_el19, .kitchen_el8, .kitchen_el7, .kitchen_el6, .kitchen_el5, .kitchen_el4, .kitchen_el3, .kitchen_el2, .kitchen_el1 {
+.kitchen_el6, .kitchen_el5, .kitchen_el4, .kitchen_el3, .kitchen_el2, .kitchen_el1 {
   border: solid 1px rgb(146, 146, 146);
 }
 
@@ -80,7 +80,4 @@
 }
 .kitchen_el6:active {
   background-color: #c4c4c4;
-}
-.kitchen_el7 {
-  grid-area: space;
 }/*# sourceMappingURL=kitchen.css.map */

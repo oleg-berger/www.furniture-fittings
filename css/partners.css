@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.partners__el8, .partners__el7, .partners__el6, .partners__el5, .partners__el4, .partners__el3, .partners__el2, .partners__el1 {
+  border: solid 1px black;
+}
+
+.partners__el7, .partners__el6, .partners__el5, .partners__el4, .partners__el3, .partners__el2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners {
+  display: grid;
+  grid-template: 250px 250px/repeat(5, 1fr);
+}
+.partners__el1 {
+  grid-row: 1/3;
+}
+.partners__el1 h1 {
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+  color: #444444;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.partners__el8 {
+  grid-column: 4/6;
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #444444;
+}
+.partners__el8::after {
+  content: "→";
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+}
+.partners__el8:active {
+  background-color: #d3d3d3;
+}/*# sourceMappingURL=partners.css.map */

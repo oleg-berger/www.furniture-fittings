@@ -19,7 +19,6 @@
                         "side num arrow button"
                         "side space space space";
     background-color: #444444;
-
     &_el1 {
         display: flex;
         align-items: center;
@@ -31,9 +30,6 @@
         }
         
     }
-
-    
-
     &_el2 {
         grid-area: side;
         @extend%allstyle;
@@ -47,9 +43,6 @@
             padding: 70px 0px 0px 30px;
         }
     }
-
-    
-
     &_el3 {
         @extend%allstyle;
         grid-area: photo;
@@ -58,9 +51,6 @@
         }
         
     }
-
-    
-
     &_el4 {
         display: flex;
         justify-content: end;
@@ -73,9 +63,6 @@
             @extend%h3-style; 
         }
     }
-
-   
-
     &_el5 {
         display: flex;
         justify-content: center;
@@ -88,9 +75,6 @@
             
         }
     }
-
-   
-
     &_el6 {
          display: flex;
         justify-content: center;
@@ -112,66 +96,5 @@
         &:active{
             background-color: #c4c4c4
         }
-    }
-
-    
-
-    &_el7 {
-        @extend%allstyle;
-        grid-area: space;
-    }
-
-    
-
-    &_el8 {
-        @extend%allstyle;
-    }
-
-    
-
-    &_el19 {
-        @extend%allstyle;
-    }
-
-    
-
-    &_el10 {
-        @extend%allstyle;
-    }
-
-    
-
-    &_el11 {
-        @extend%allstyle;
-    }
-
-    
-
-    &_el12 {
-        @extend%allstyle;
-    }
-
-    
-
-    &_el13 {
-        @extend%allstyle;
-    }
-
-    
-
-    &_el14 {
-        @extend%allstyle;
-    }
-
-    
-
-    &_el15 {
-        @extend%allstyle;
-    }
-
-    
-
-    &_el16 {
-        @extend%allstyle;
     }
 }
