@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .products {
   display: grid;
   grid-template-columns: repeat(3, 506px);
@@ -69,7 +70,23 @@
   border: solid 1px black;
   min-width: 506px;
   min-height: 71px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
 }
 .products__el6-button:active {
   background-color: #e7e7e7;
+}
+.products__el6-button::after {
+  content: "→";
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding: 0px 30px 0px 20px;
+}
+
+.product__text-padding-none {
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
 }/*# sourceMappingURL=product.css.map */
