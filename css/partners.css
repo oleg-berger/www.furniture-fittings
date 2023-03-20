@@ -34,6 +34,7 @@
   font-size: 24px;
   line-height: 29px;
   color: #444444;
+  background-color: #E5E5E5;
 }
 .partners__el8::after {
   content: "→";

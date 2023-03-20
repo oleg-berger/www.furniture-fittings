@@ -43,7 +43,7 @@
   grid-area: photo;
 }
 .kitchen_el3 img {
-  max-width: 1243.9px;
+  max-width: 100%;
 }
 .kitchen_el4 {
   display: flex;
