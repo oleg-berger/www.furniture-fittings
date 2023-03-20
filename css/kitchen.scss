@@ -13,7 +13,9 @@
 .kitchen {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 260px 566px 120px 120px;
+    // grid-template-rows: minmax(1fr, 260px)  minmax(1fr, 566px) minmax(1fr, 120px) minmax(1fr, 120px);
+    grid-template-rows: 260px 583px 120px 120px;
+    // grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "head head head head" 
                         "side photo photo photo"
                         "side num arrow button"
@@ -44,10 +46,13 @@
         }
     }
     &_el3 {
+        display: flex;
+        justify-content: flex-start;
         @extend%allstyle;
         grid-area: photo;
         img{
-            max-width: 100%;
+            
+          max-width: 100%;
         }
         
     }

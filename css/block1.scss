@@ -1,17 +1,19 @@
 .block1{
+    // white-space: nowrap;
     display: grid;
-    // grid-template: minmax(440px, 1fr) minmax(440px, 1fr)  minmax(120px, 1fr) / minmax(640px, 1fr) minmax(960px, 1fr) minmax(320px, 1fr);
-    // grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-    grid-template-columns: 640px 600px 278px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 120px;
-    border: solid 1px gray;
+    grid-template-areas: "aside h1 space1"
+                        "aside subtittle space2"
+                        "aside button button";
 }
 
 .block1__el1{
-    grid-row-start: 1;
-    grid-row-end: 4;
+    // grid-row-start: 1;
+    // grid-row-end: 4;
     order: 1;
     border: solid 1px black;
+    grid-area: aside;
 }
 
 .block1__el2{
@@ -23,6 +25,7 @@
     line-height: 110%;
     padding: 150px 0px 0px 30px;
     border: solid 1px black;
+    grid-area: h1;
 }
 .block1__el3{
     order: 4;
@@ -32,6 +35,7 @@
     font-size: 18px;
     line-height: 150%;
     border: solid 1px black;
+    grid-area: subtittle;
 }
 .block1__el4{
     grid-column-start: 2;
@@ -47,6 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
+    grid-area: button;
     &::after{
         content: "\2192";
         font-size: 20px;
@@ -60,10 +65,12 @@
 .block1__el5{
     order: 4;
     border: solid 1px black;
+    grid-area: space1;
 }
 .block1__el6{
     order: 5 ;
     border: solid 1px black;
+    grid-area: space2;
 }
 
 .block1__el3_width{

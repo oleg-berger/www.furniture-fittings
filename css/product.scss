@@ -1,6 +1,6 @@
 .products {
     display: grid;
-    grid-template-columns: repeat(3, 506px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 450px 360px;
     // grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
 
@@ -59,6 +59,8 @@
 
     &__el6 {
         border: solid 1px black;
+        display: flex;
+        align-items: flex-end;
        
     }
     .prodduct__el2_active-button{
@@ -92,9 +94,8 @@
 }
 .products__el6-button{
     background-color: #E5E5E5;
-    margin-top: 288px;
     border: solid 1px black;
-    min-width: 506px;
+    width: 100%;
     min-height: 71px;
     display: flex;
     justify-content: flex-start;

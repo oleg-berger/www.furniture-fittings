@@ -15,7 +15,7 @@
 .kitchen {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 260px 566px 120px 120px;
+  grid-template-rows: 260px 583px 120px 120px;
   grid-template-areas: "head head head head" "side photo photo photo" "side num arrow button" "side space space space";
   background-color: #444444;
 }
@@ -40,6 +40,8 @@
   padding: 70px 0px 0px 30px;
 }
 .kitchen_el3 {
+  display: flex;
+  justify-content: flex-start;
   grid-area: photo;
 }
 .kitchen_el3 img {
