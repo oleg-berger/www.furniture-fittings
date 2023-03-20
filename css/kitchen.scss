@@ -1,0 +1,177 @@
+%allstyle{
+    border: solid 1px rgb(146, 146, 146);;
+}
+%h3-style{
+    font-family: 'RF Dewi Expanded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.kitchen {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 260px 566px 120px 120px;
+    grid-template-areas: "head head head head" 
+                        "side photo photo photo"
+                        "side num arrow button"
+                        "side space space space";
+    background-color: #444444;
+
+    &_el1 {
+        display: flex;
+        align-items: center;
+        @extend%allstyle;
+        grid-area: head;
+        h3{
+        padding: 100px 0px 0px 30px;
+        @extend%h3-style
+        }
+        
+    }
+
+    
+
+    &_el2 {
+        grid-area: side;
+        @extend%allstyle;
+        p{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #FFFFFF;
+            padding: 70px 0px 0px 30px;
+        }
+    }
+
+    
+
+    &_el3 {
+        @extend%allstyle;
+        grid-area: photo;
+        img{
+            max-width: 1243.9px;
+        }
+        
+    }
+
+    
+
+    &_el4 {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        @extend%allstyle;
+        grid-area: num;
+        min-width: 700px;
+        h3{
+            padding-right: 30px;
+            @extend%h3-style; 
+        }
+    }
+
+   
+
+    &_el5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        @extend%allstyle;
+        grid-area: arrow;
+        p{
+            @extend%h3-style;
+            
+        }
+    }
+
+   
+
+    &_el6 {
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        @extend%allstyle;
+        grid-area: button;
+        h3{
+           
+            @extend%h3-style;
+            color: #444444;
+        }
+        &::after{
+            content: "\2192";
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            padding: 0px 0px 0px 10px;
+        }
+        &:active{
+            background-color: #c4c4c4
+        }
+    }
+
+    
+
+    &_el7 {
+        @extend%allstyle;
+        grid-area: space;
+    }
+
+    
+
+    &_el8 {
+        @extend%allstyle;
+    }
+
+    
+
+    &_el19 {
+        @extend%allstyle;
+    }
+
+    
+
+    &_el10 {
+        @extend%allstyle;
+    }
+
+    
+
+    &_el11 {
+        @extend%allstyle;
+    }
+
+    
+
+    &_el12 {
+        @extend%allstyle;
+    }
+
+    
+
+    &_el13 {
+        @extend%allstyle;
+    }
+
+    
+
+    &_el14 {
+        @extend%allstyle;
+    }
+
+    
+
+    &_el15 {
+        @extend%allstyle;
+    }
+
+    
+
+    &_el16 {
+        @extend%allstyle;
+    }
+}

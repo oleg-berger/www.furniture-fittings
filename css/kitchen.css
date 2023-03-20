@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.kitchen_el16, .kitchen_el15, .kitchen_el14, .kitchen_el13, .kitchen_el12, .kitchen_el11, .kitchen_el10, .kitchen_el19, .kitchen_el8, .kitchen_el7, .kitchen_el6, .kitchen_el5, .kitchen_el4, .kitchen_el3, .kitchen_el2, .kitchen_el1 {
+  border: solid 1px rgb(146, 146, 146);
+}
+
+.kitchen_el6 h3, .kitchen_el5 p, .kitchen_el4 h3, .kitchen_el1 h3 {
+  font-family: "RF Dewi Expanded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.kitchen {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 260px 566px 120px 120px;
+  grid-template-areas: "head head head head" "side photo photo photo" "side num arrow button" "side space space space";
+  background-color: #444444;
+}
+.kitchen_el1 {
+  display: flex;
+  align-items: center;
+  grid-area: head;
+}
+.kitchen_el1 h3 {
+  padding: 100px 0px 0px 30px;
+}
+.kitchen_el2 {
+  grid-area: side;
+}
+.kitchen_el2 p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+  padding: 70px 0px 0px 30px;
+}
+.kitchen_el3 {
+  grid-area: photo;
+}
+.kitchen_el3 img {
+  max-width: 1243.9px;
+}
+.kitchen_el4 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  grid-area: num;
+  min-width: 700px;
+}
+.kitchen_el4 h3 {
+  padding-right: 30px;
+}
+.kitchen_el5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  grid-area: arrow;
+}
+.kitchen_el6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  grid-area: button;
+}
+.kitchen_el6 h3 {
+  color: #444444;
+}
+.kitchen_el6::after {
+  content: "→";
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding: 0px 0px 0px 10px;
+}
+.kitchen_el6:active {
+  background-color: #c4c4c4;
+}
+.kitchen_el7 {
+  grid-area: space;
+}/*# sourceMappingURL=kitchen.css.map */
