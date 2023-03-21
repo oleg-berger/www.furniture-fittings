@@ -63,4 +63,9 @@
   .head-tittle {
     max-width: 1250px;
   }
+}
+@media (max-width: 768px) {
+  .head-tittle {
+    display: none;
+  }
 }/*# sourceMappingURL=head-tittle.css.map */

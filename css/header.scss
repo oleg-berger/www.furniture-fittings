@@ -33,6 +33,9 @@
     display: flex;
     gap: 30px;
 }
+.header-mob{
+    display: none;
+}
 
 @media (max-width:1761px){
     .header{
@@ -51,4 +54,36 @@
     .menu{
         gap: 20px;
     }
+}
+@media (max-width:768px){
+    .header{
+        display: none;
+    }
+    .header-mob {
+
+		display: block;
+
+		&__burger {
+            display: block;
+		}
+
+		// .header-mob__logo
+
+		&__logo {
+            display: block;
+		}
+
+		// .header-mob__icons
+
+		&__icons {
+		}
+}
+.icons {
+
+		// .icons__photo
+
+		&__photo {
+		}
+}
+
 }
