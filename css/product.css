@@ -78,7 +78,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  text-align: center;
 }
 .products__el6-button:active {
   background-color: #c1c1c1;

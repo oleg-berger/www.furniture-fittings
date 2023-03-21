@@ -2,7 +2,7 @@
 .head-tittle {
     display: flex;
     justify-content: space-between;
-    max-width: 1400px;
+    max-width: 1750px;
     margin: 0 auto;
     
     padding-bottom: 30px;
@@ -24,6 +24,9 @@
             margin-top: 20px;
             &:active{
                 color: #868686;
+            }
+            &:hover{
+                text-decoration: underline;
             }
 			&_black {
                 font-weight: 500;
@@ -47,6 +50,22 @@
             // box-shadow: #ff0000;
             filter: drop-shadow(5px 10px 15px black);
         }
+    }
+}
+
+@media (max-width:1761px){
+    .head-tittle{
+        max-width: 1550px;
+    }
+}
+@media (max-width:1600px){
+    .head-tittle{
+        max-width: 1440px;
+    }
+}
+@media (max-width:1441px){
+    .head-tittle{
+        max-width: 1250px;
     }
 }
 

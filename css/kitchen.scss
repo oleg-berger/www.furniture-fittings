@@ -12,7 +12,7 @@
 
 .kitchen {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 718px repeat(3, 1fr);
     // grid-template-rows: minmax(1fr, 260px)  minmax(1fr, 566px) minmax(1fr, 120px) minmax(1fr, 120px);
     grid-template-rows: 260px 583px 120px 120px;
     // grid-template-rows: repeat(4, 1fr);
@@ -36,6 +36,7 @@
         grid-area: side;
         @extend%allstyle;
         p{
+            max-width: 400px;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
@@ -102,4 +103,28 @@
             background-color: #c4c4c4
         }
     }
+}
+
+
+@media (max-width:1834px){
+   
+}
+@media (max-width:1761px){
+    .kitchen{
+        grid-template-columns: 618px repeat(3, 1fr);
+        &_el4{
+            min-width: 600px;
+        }
+    }
+ }
+@media (max-width:1600px){
+     .kitchen{
+        grid-template-columns: 518px repeat(3, 1fr);
+        &_el4{
+            min-width: 500px;
+        }
+    }
+}
+@media (max-width:1441px){ 
+   
 }

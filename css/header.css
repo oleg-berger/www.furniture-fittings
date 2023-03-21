@@ -1,5 +1,5 @@
 .header {
-  max-width: 1400px;
+  max-width: 1750px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -29,8 +29,30 @@
 .header__text:active {
   color: #525252;
 }
+.header__text:hover {
+  text-decoration: underline;
+}
 
 .menu {
   display: flex;
   gap: 30px;
+}
+
+@media (max-width: 1761px) {
+  .header {
+    max-width: 1550px;
+  }
+}
+@media (max-width: 1600px) {
+  .header {
+    max-width: 1440px;
+  }
+}
+@media (max-width: 1441px) {
+  .header {
+    max-width: 1250px;
+  }
+  .menu {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=header.css.map */

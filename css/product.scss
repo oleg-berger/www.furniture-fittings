@@ -2,8 +2,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 450px 360px;
-    // grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-
     &__el1 {
         border: solid 1px black;
     }
@@ -17,20 +15,12 @@
             max-width: 320px;
         }
     }
-    
-
     &__el2 {
         @extend%fleximg;
     }
-
-    
-
     &__el3 {
         @extend%fleximg;
     }
-
-    
-
     &__el4 {
         border: solid 1px black;
         display: flex;
@@ -41,9 +31,6 @@
             max-width: 192px;
         }
     }
-
-    
-
     &__el5 {
         border: solid 1px black;
         display: flex;
@@ -54,9 +41,6 @@
             max-width: 216px;
         }
     }
-
-    
-
     &__el6 {
         border: solid 1px black;
         display: flex;
@@ -71,7 +55,6 @@
         }
     }
 }
-
 .products__text{
     font-family: 'RF Dewi Expanded';
     font-style: normal;
@@ -100,7 +83,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    text-align: center;
     &:active{
         background-color: #c1c1c1;
     }
@@ -111,13 +93,8 @@
         padding: 0px 30px 0px 20px;
     }
 }
-
 .product__text-padding-none{
     padding: 0;
     margin: 0;
-    padding-left: 15px;
-    // display: flex;
-    // justify-content: flex-start;
-    // align-items: center;
-}
+    padding-left: 15px;}
 

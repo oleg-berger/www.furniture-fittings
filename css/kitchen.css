@@ -14,7 +14,7 @@
 
 .kitchen {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 718px repeat(3, 1fr);
   grid-template-rows: 260px 583px 120px 120px;
   grid-template-areas: "head head head head" "side photo photo photo" "side num arrow button" "side space space space";
   background-color: #444444;
@@ -31,6 +31,7 @@
   grid-area: side;
 }
 .kitchen_el2 p {
+  max-width: 400px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -82,4 +83,21 @@
 }
 .kitchen_el6:active {
   background-color: #c4c4c4;
+}
+
+@media (max-width: 1761px) {
+  .kitchen {
+    grid-template-columns: 618px repeat(3, 1fr);
+  }
+  .kitchen_el4 {
+    min-width: 600px;
+  }
+}
+@media (max-width: 1600px) {
+  .kitchen {
+    grid-template-columns: 518px repeat(3, 1fr);
+  }
+  .kitchen_el4 {
+    min-width: 500px;
+  }
 }/*# sourceMappingURL=kitchen.css.map */
