@@ -60,22 +60,27 @@
         display: none;
     }
     .header-mob {
-
-		display: block;
+        max-width: 600px;
+        margin: 0 auto;
+        display: block;
+        display: flex;
+		justify-content: space-between;
+        align-items: center;
 
 		&__burger {
-            display: block;
 		}
 
-		// .header-mob__logo
+		
 
 		&__logo {
-            display: block;
+            
 		}
 
-		// .header-mob__icons
+
 
 		&__icons {
+            max-width: 100%;
+		}
 		}
 }
 .icons {
@@ -86,4 +91,4 @@
 		}
 }
 
-}
+

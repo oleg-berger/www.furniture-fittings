@@ -23,14 +23,17 @@
 
 .block1__el2{
     order: 2;
-    font-family: 'RF Dewi Expanded';
+  
+    padding: 150px 0px 0px 30px;
+    border: solid 1px black;
+    grid-area: h1;
+    h1{
+          font-family: 'RF Dewi Expanded';
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 110%;
-    padding: 150px 0px 0px 30px;
-    border: solid 1px black;
-    grid-area: h1;
+    }
 }
 .block1__el3{
     order: 4;
@@ -43,8 +46,6 @@
     grid-area: subtittle;
 }
 .block1__el4{
-    grid-column-start: 2;
-    grid-column-end: 4;
     background-color: #444444;
     font-family: 'RF Dewi Expanded';
     font-style: normal;
@@ -120,3 +121,29 @@
     }
 }
 
+@media screen and (max-width:769px){
+    .block1{
+        grid-template-columns: 416px 351px;
+        grid-template-rows: 572px 305px 85px;
+        grid-template-areas: "aside h1 "
+                        "subtittle space2"
+                        "button button";
+    }
+    .block1__el3{
+        font-size: 12px;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 60px;
+    }
+    .block1__el2{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 90px;
+        h1{
+            font-size: 24px;
+            max-width: 245px;
+            color: #444444;
+        }
+    }
+}

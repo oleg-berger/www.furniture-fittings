@@ -65,12 +65,14 @@
     display: none;
   }
   .header-mob {
+    max-width: 600px;
+    margin: 0 auto;
     display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  .header-mob__burger {
-    display: block;
-  }
-  .header-mob__logo {
-    display: block;
+  .header-mob__icons {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=header.css.map */
