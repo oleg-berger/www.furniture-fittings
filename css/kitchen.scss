@@ -1,7 +1,9 @@
-%allstyle{
-    border: solid 1px rgb(146, 146, 146);;
+%allstyle {
+    border: solid 1px rgb(146, 146, 146);
+    ;
 }
-%h3-style{
+
+%h3-style {
     font-family: 'RF Dewi Expanded';
     font-style: normal;
     font-weight: 600;
@@ -16,26 +18,30 @@
     // grid-template-rows: minmax(1fr, 260px)  minmax(1fr, 566px) minmax(1fr, 120px) minmax(1fr, 120px);
     grid-template-rows: 260px 583px 120px 120px;
     // grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "head head head head" 
-                        "side photo photo photo"
-                        "side num arrow button"
-                        "side space space space";
+    grid-template-areas: "head head head head"
+        "side photo photo photo"
+        "side num arrow button"
+        "side space space space";
     background-color: #444444;
+
     &_el1 {
         display: flex;
         align-items: center;
         @extend%allstyle;
         grid-area: head;
-        h3{
-        padding: 100px 0px 0px 30px;
-        @extend%h3-style
+
+        h3 {
+            padding: 100px 0px 0px 30px;
+            @extend%h3-style
         }
-        
+
     }
+
     &_el2 {
         grid-area: side;
         @extend%allstyle;
-        p{
+
+        p {
             max-width: 400px;
             font-family: 'Montserrat';
             font-style: normal;
@@ -46,17 +52,20 @@
             padding: 70px 0px 0px 30px;
         }
     }
+
     &_el3 {
         display: flex;
         justify-content: flex-start;
         @extend%allstyle;
         grid-area: photo;
-        img{
-            
-          max-width: 100%;
+
+        img {
+
+            max-width: 100%;
         }
-        
+
     }
+
     &_el4 {
         display: flex;
         justify-content: end;
@@ -64,11 +73,13 @@
         @extend%allstyle;
         grid-area: num;
         min-width: 700px;
-        h3{
+
+        h3 {
             padding-right: 30px;
-            @extend%h3-style; 
+            @extend%h3-style;
         }
     }
+
     &_el5 {
         display: flex;
         justify-content: center;
@@ -76,120 +87,139 @@
         gap: 20px;
         @extend%allstyle;
         grid-area: arrow;
-        p{
+
+        p {
             @extend%h3-style;
-            
+
         }
     }
+
     &_el6 {
-         display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         background-color: #FFFFFF;
         @extend%allstyle;
         grid-area: button;
-        h3{
-           
+
+        h3 {
+
             @extend%h3-style;
             color: #444444;
         }
-        &::after{
+
+        &::after {
             content: "\2192";
             font-size: 20px;
             color: rgb(0, 0, 0);
             padding: 0px 0px 0px 10px;
         }
-        &:active{
+
+        &:active {
             background-color: #c4c4c4
         }
     }
 }
-.kitchen-mob{
+
+.kitchen-mob {
     display: none;
 }
 
-@media (max-width:1834px){
-   
-}
-@media (max-width:1761px){
-    .kitchen{
+@media (max-width:1834px) {}
+
+@media (max-width:1761px) {
+    .kitchen {
         grid-template-columns: 618px repeat(3, 1fr);
-        &_el4{
+
+        &_el4 {
             min-width: 600px;
         }
     }
- }
-@media (max-width:1600px){
-     .kitchen{
+}
+
+@media (max-width:1600px) {
+    .kitchen {
         grid-template-columns: 518px repeat(3, 1fr);
-        &_el4{
+
+        &_el4 {
             min-width: 500px;
         }
     }
 }
-@media (max-width:1441px){ 
-   
-}
+
+@media (max-width:1441px) {}
+
 @media screen and (max-width:769px) {
-    .kitchen{
+    .kitchen {
         display: none;
     }
-    .kitchen-mob{
+
+    .kitchen-mob {
         display: block;
         background-color: #444444;
     }
-    %allstyle-mob{
+
+    %allstyle-mob {
         border: none;
     }
-    .kitchen_el1{
+
+    .kitchen_el1 {
         padding: 80px 50px 50px 50px;
 
         @extend%allstyle-mob;
-        h3{
+
+        h3 {
             font-size: 18px;
             padding: 0;
         }
     }
-    .kitchen_el3{
+
+    .kitchen_el3 {
         @extend%allstyle-mob;
     }
 
-        
-        %kitchen-mob__nav-padding{
-            padding: 30px 0px 30px 0px;
-        }
 
-    .kitchen_el4{
+    %kitchen-mob__nav-padding {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .kitchen_el4 {
         max-width: 427px;
         grid-column: 1 / 3;
-        h3{
+
+        h3 {
             padding-right: 30px;
             @extend%kitchen-mob__nav-padding
         }
     }
-    .kitchen_el5{
-        // max-width: 113px;
-        grid-column: 3 / 5 ;
-        p{
 
-        }
+    .kitchen_el5 {
+        // max-width: 113px;
+        grid-column: 3 / 5;
+
+        p {}
     }
-    .kitchen_el6{
+
+    .kitchen_el6 {
         // max-width: 228px;
-        grid-column: 5 / 7 ;
-        h3{
+        grid-column: 5 / 7;
+
+        h3 {
             font-size: 18px;
         }
-        
+
     }
-    .kitchen-mob__df{
+
+    .kitchen-mob__df {
         display: grid;
         grid-template: 1fr / repeat(6, 1fr);
     }
-    .kitchen_el2{
+
+    .kitchen_el2 {
         display: grid;
         grid-template: 340px / 1fr;
-        p{
+
+        p {
             max-width: 285px;
             font-size: 12px;
             padding: 60px 0px 0px 50px;
