@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 718px repeat(3, 1fr);
     // grid-template-rows: minmax(1fr, 260px)  minmax(1fr, 566px) minmax(1fr, 120px) minmax(1fr, 120px);
-    grid-template-rows: 260px 583px 120px 120px;
+    grid-template-rows: 260px 1fr 120px 120px;
     // grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "head head head head"
         "side photo photo photo"
@@ -147,7 +147,40 @@
     }
 }
 
-@media (max-width:1441px) {}
+@media (max-width:1441px) {
+    .kitchen {
+        grid-template-columns: 318px repeat(3, 1fr);
+        grid-template-rows: 260px 1fr 120px 120px;
+    }
+    .kitchen_el4{
+        min-width: 450px;
+    }
+}
+@media screen and (max-width:1320px) {
+    .kitchen_el4{
+        min-width: 420px;
+    }
+}
+@media screen and (max-width:1106px) {
+    .kitchen {
+        grid-template-columns: 318px repeat(3, 1fr);
+        grid-template-rows: 260px 382px 120px 120px;
+    }
+    .kitchen_el2{
+        p{
+            font-size: 15px
+        }
+    }
+    .kitchen_el4{
+        min-width: 320px;
+    }
+}
+@media screen and (max-width:905px) {
+    .kitchen {
+        grid-template-columns: 190px repeat(3, 1fr);
+        grid-template-rows: 260px 382px 120px 120px;
+    }
+}
 
 @media screen and (max-width:769px) {
     .kitchen {
@@ -184,9 +217,9 @@
     }
 
     .kitchen_el4 {
-        max-width: 427px;
+      
         grid-column: 1 / 3;
-
+        min-width: none;
         h3 {
             padding-right: 30px;
             @extend%kitchen-mob__nav-padding
@@ -195,14 +228,14 @@
 
     .kitchen_el5 {
         // max-width: 113px;
-        grid-column: 3 / 5;
+        grid-column: 3 / 4;
 
         p {}
     }
 
     .kitchen_el6 {
         // max-width: 228px;
-        grid-column: 5 / 7;
+        grid-column: 4 / 5;
 
         h3 {
             font-size: 18px;
@@ -211,8 +244,10 @@
     }
 
     .kitchen-mob__df {
+        max-width: 768px;
         display: grid;
-        grid-template: 1fr / repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 100px 1fr;
     }
 
     .kitchen_el2 {

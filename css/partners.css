@@ -46,6 +46,26 @@
   background-color: #d3d3d3;
 }
 
+@media screen and (max-width: 1220px) {
+  .partners__el-max-width-mob img {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .partners__el-max-width-mob img {
+    max-width: 170px;
+  }
+}
+@media screen and (max-width: 936px) {
+  .partners__el-max-width-mob img {
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 857px) {
+  .partners__el-max-width-mob img {
+    max-width: 130px;
+  }
+}
 @media screen and (max-width: 769px) {
   .partners {
     display: grid;
