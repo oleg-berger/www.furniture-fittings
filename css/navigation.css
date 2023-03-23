@@ -28,4 +28,31 @@
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+.navigation-mob {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .navigation {
+    display: none;
+  }
+  .navigation-mob {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    background-color: #444444;
+  }
+  .navigation-mob ul {
+    padding: 30px 0px 30px 0px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .navigation-mob-invisible {
+    color: #444444;
+  }
+  .navigation-mob-margin {
+    padding-right: 130px;
+  }
 }/*# sourceMappingURL=navigation.css.map */
