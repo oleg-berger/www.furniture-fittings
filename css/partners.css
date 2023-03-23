@@ -49,7 +49,7 @@
 @media screen and (max-width: 769px) {
   .partners {
     display: grid;
-    grid-template: repeat(2, 1fr) 63px/repeat(4, 1fr);
+    grid-template: repeat(2, 200px) 63px/repeat(4, 1fr);
   }
   .partners__el1 {
     grid-column: 1/3;
@@ -77,8 +77,12 @@
     padding-right: 30px;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 600px) {
   .partners__el-max-width-mob img {
     max-width: 100px;
+  }
+  .partners {
+    display: grid;
+    grid-template: repeat(2, 130px) 63px/repeat(4, 1fr);
   }
 }/*# sourceMappingURL=partners.css.map */

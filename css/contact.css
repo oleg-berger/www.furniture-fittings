@@ -59,4 +59,49 @@
 }
 .contact__el4 h3 {
   padding-right: 10px;
+}
+
+.contact-mob {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .contact {
+    display: none;
+  }
+  .contact-mob {
+    display: block;
+    background-color: #444444;
+    display: grid;
+    grid-template: 178px 220px 580px/1fr 1fr;
+  }
+  .contact__el1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    padding-left: 30px;
+    border: none;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .contact__el1 h1 {
+    max-width: 200px;
+  }
+  .contact__el2 {
+    border: none;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .contact__el3 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .contact__el-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__el-mob-margin {
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=contact.css.map */
