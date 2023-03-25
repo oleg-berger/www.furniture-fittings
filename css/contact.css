@@ -104,4 +104,25 @@
   .contact__el-mob-margin {
     margin-top: 50px;
   }
+}
+@media screen and (max-width: 426px) {
+  .contact-mob {
+    display: grid;
+    grid-template: 178px 1fr 580px/1fr;
+  }
+  .contact__el3, .contact__el2 {
+    border: solid 1px #7A7A7A;
+    border-left: none;
+    border-right: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__el3 span, .contact__el2 span {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .contact__numbers h3 {
+    padding-left: 30px;
+  }
 }/*# sourceMappingURL=contact.css.map */
