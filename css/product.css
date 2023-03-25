@@ -177,6 +177,7 @@
     padding: 45px 0px 45px 0px;
   }
   .products__text {
+    color: #444444;
     padding-left: 40px;
     margin: 0;
     padding-right: 0;
@@ -208,5 +209,19 @@
     border-top: none;
     border-left: none;
     border-right: none;
+  }
+  .products__el6::after {
+    padding-bottom: 20px;
+  }
+  .product__text-padding-none {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .products__text {
+    max-width: 100px;
+  }
+  .product__text-padding-none {
+    max-width: 200px;
   }
 }/*# sourceMappingURL=product.css.map */
