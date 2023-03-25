@@ -71,7 +71,8 @@
         display: flex;
 		justify-content: space-between;
         align-items: center;
-
+        margin-top: 20px;
+        margin-bottom: 20px;
 		&__burger {
 		}
 
@@ -95,5 +96,12 @@
 		&__photo {
 		}
 }
-
+@media screen and (max-width:426px) {
+    .header-mob{
+        max-width: 370px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
 

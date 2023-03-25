@@ -76,8 +76,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .header-mob__icons {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .header-mob {
+    max-width: 370px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=header.css.map */
