@@ -46,6 +46,9 @@
 .navigation-mob {
     display: none;
 }
+.navigation-mobile{
+    display: none;
+}
 
 @media screen and (max-width:769px) {
     .navigation {
@@ -73,5 +76,29 @@
 
     .navigation-mob-margin {
         padding-right: 130px;
+    }
+    .navigation-mobile{
+        display: none;
+    }
+}
+@media screen and (max-width:426px) {
+    .navigation-mob{
+        display: none;
+    }
+    .navigation-mobile{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        background-color: #444444;
+        border: solid 1px #7A7A7A;
+        border-left: none;
+        border-right: none;
+        ul{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            max-width: 390px;
+        }
+        
     }
 }
